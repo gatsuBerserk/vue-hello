@@ -11,15 +11,16 @@ const app = new Vue (
         data : {
             message : "Hello World", 
             messageBtn : "Click MEEEEEEEEEEE", 
-            img: "https://picsum.photos/id/237/200/300", 
-            show: "d-inline" 
+            messageImg : "Padre Maronno", 
+            img: "https://picsum.photos/id/1025/600/700", 
+            
         },  
         methods: {
-            saluta : function() {
+            immage : function() {
                 const img = document.getElementById("img");
                 img.innerHTML+=`
-                <img src="https://picsum.photos/id/1025/600/700" alt=""> 
-                <h1> Padre Maronno </h1> 
+                <img src="${this.img}" alt=""> 
+                <h1> ${this.messageImg}</h1> 
                  `
             }
         } 
