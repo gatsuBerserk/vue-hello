@@ -9,7 +9,20 @@ const app = new Vue (
     {
         el : "#app", 
         data : {
-            message : "Hello World"
-        }
+            message : "Hello World", 
+            messageBtn : "Click MEEEEEEEEEEE", 
+            img: "https://picsum.photos/id/237/200/300", 
+            show: "d-inline" 
+        },  
+        methods: {
+            saluta : function() {
+                const img = document.getElementById("img");
+                img.innerHTML+=`
+                <img src="https://picsum.photos/id/1025/600/700" alt=""> 
+                <h1> Padre Maronno </h1> 
+                 `
+            }
+        } 
+
     }
 )

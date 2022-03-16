@@ -14,10 +14,16 @@
 <body> 
     <!-- VueJs Wrapper -->
     <main id="app">
-        <div class="containe-fluid mt-5">
+        <div class="containe-fluid mt-5 text-center">
             <div class="row">
-                <div class="col-12 text-center"> 
+                <div class="col-12"> 
                     <h1>{{message}}</h1>
+                </div> 
+                <div class="col 6">
+                    <button class="btn btn-warning" @click="saluta()">{{messageBtn}} </button> 
+                        <figure id="img" class="my-3">
+                            <!-- <img src="https://picsum.photos/id/237/600/700" alt="">  -->
+                        </figure>
                 </div>
             </div>
         </div>
