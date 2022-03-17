@@ -13,17 +13,8 @@ const app = new Vue (
             messageBtn : "Click MEEEEEEEEEEE", 
             messageImg : "Padre Maronno", 
             img: "https://picsum.photos/id/1025/600/700", 
+            img2: "", 
             
-        },  
-        methods: {
-            immage : function() {
-                const img = document.getElementById("img");
-                img.innerHTML+=`
-                <img src="${this.img}" alt=""> 
-                <h1> ${this.messageImg}</h1> 
-                 `
-            }
-        } 
-
+        }
     }
 )
